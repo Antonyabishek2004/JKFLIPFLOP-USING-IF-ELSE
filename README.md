@@ -1,38 +1,40 @@
+# NAME : ANTONY ABISHEK
+
+# REGISTER NUMBER : 212223240009
+
 # JKFLIPFLOP-USING-IF-ELSE
 
-**AIM:** 
+# Aim :
 
 To implement  JK flipflop using verilog and validating their functionality using their functional tables
 
-**SOFTWARE REQUIRED:**
+# Software required :
 
 Quartus prime
 
-**THEORY**
+# Theory :
 
-**JK Flip-Flop**
+# JK flip flop
 
 JK flip-flop is the modified version of SR flip-flop. It operates with only positive clock transitions or negative clock transitions. The circuit diagram of JK flip-flop is shown in the following figure.
 
-![image](https://github.com/naavaneetha/JKFLIPFLOP-USING-IF-ELSE/assets/154305477/a649c30b-232b-4558-b188-fd6c09845180)
-
+![image](https://github.com/user-attachments/assets/e6eeb997-000d-470e-890a-bc93349b9eeb)
 
 This circuit has two inputs J & K and two outputs Qtt & Qtt’. The operation of JK flip-flop is similar to SR flip-flop. Here, we considered the inputs of SR flip-flop as S = J Qtt’ and R = KQtt in order to utilize the modified SR flip-flop for 4 combinations of inputs. The following table shows the state table of JK flip-flop.
 
-![image](https://github.com/naavaneetha/JKFLIPFLOP-USING-IF-ELSE/assets/154305477/c4360742-e8a8-4937-b089-c46c0433f9a3)
+![image](https://github.com/user-attachments/assets/5ea07395-0981-4cb4-b19f-138e6e776f3b)
 
- 
 Here, Qtt & Qt+1t+1 are present state & next state respectively. So, JK flip-flop can be used for one of these four functions such as Hold, Reset, Set & Complement of present state based on the input conditions, when positive transition of clock signal is applied. The following table shows the characteristic table of JK flip-flop. Present Inputs Present State Next State
  
-![image](https://github.com/naavaneetha/JKFLIPFLOP-USING-IF-ELSE/assets/154305477/6c275261-a6d5-4c37-a3a7-1e88ca11c4cd)
+![image](https://github.com/user-attachments/assets/775f1b63-9dce-4f3c-afbe-16e6615f295b)
 
 By using three variable K-Map, we can get the simplified expression for next state, Qt+1t+1. Three variable K-Map for next state, Qt+1t+1 is shown in the following figure.
  
-![image](https://github.com/naavaneetha/JKFLIPFLOP-USING-IF-ELSE/assets/154305477/5174f41b-0ce0-4329-a372-6d1943ea6673)
+![image](https://github.com/user-attachments/assets/690c3a83-bbaa-479a-9581-592fad8c346e)
 
 The maximum possible groupings of adjacent ones are already shown in the figure. Therefore, the simplified expression for next state Qt+1t+1 is Q(t+1)=JQ(t)′+K′Q(t)Q(t+1)=JQ(t)′+K′Q(t)
 
-**Procedure**
+# Procedure
 
 Step 1: Open Quartus II in your laptop.
 
@@ -46,13 +48,13 @@ Step 5: Run simulation to get the output.
 
 Step 6: Open in RTL viewers to get RTL diagram output.
 
-**PROGRAM**
+# Program :
+
 ```
-Program for flipflops and verify its truth table in quartus using Verilog programming. 
-Developed by:Yogeshvar M 
-RegisterNumber:212222230180
-```
-```
+NAME : ANTONY ABISHEK
+
+REGISTER NUMBER : 212223240009
+
 module JKFLIPFLOPUSINGIFELSE(q, qb,j,k,clock,reset);
     input j,k,clock,reset;
     output reg q, qb;
@@ -88,14 +90,14 @@ end
 endmodule
 ```
 
+# RTL logic for flipflops :
 
-**RTL LOGIC FOR FLIPFLOPS**
-![image](https://github.com/DakshataGajendran/JKFLIPFLOP-USING-IF-ELSE/assets/145742623/13da089c-a3e5-48a3-9d94-1abe16f4dfcf)
+![image](https://github.com/user-attachments/assets/000f8324-2160-4b25-8ec7-b4e676bf5c89)
 
+# Timing diagrams for flipflops :
 
-**TIMING DIGRAMS FOR FLIP FLOPS**
-![image](https://github.com/DakshataGajendran/JKFLIPFLOP-USING-IF-ELSE/assets/145742623/f82487ca-a903-4782-a22c-01f2471a284f)
+![image](https://github.com/user-attachments/assets/ccebb3ec-bd0c-400c-9c17-a6020bbafd76)
 
+# Result :
 
-**RESULTS**
 Hence, JK flipflop using verilog and validating their functionality using their functional tables is implemented.
